@@ -1,7 +1,7 @@
 
 ## 简介
 
-Vite Element Admin TS 是一个免费开源的中后台模版(Ts 版本)。使用了最新的`typescript`,`vue3`,`vite2`,`pinia`等主流技术开发，开箱即用的中后台前端解决方案，也可用于学习参考。该模板功能和JS版本保持一致
+Vite Element Admin Thin TS 是一个免费开源的中后台模版(基础版本)。使用了最新的`typescript`,`vue3`,`vite2`,`pinia`等主流技术开发，开箱即用的中后台前端解决方案，也可用于学习参考。该模板功能和JS版本保持一致
 
 ## 特性
 
@@ -12,8 +12,10 @@ Vite Element Admin TS 是一个免费开源的中后台模版(Ts 版本)。使�
 
 ## 预览
 
-- [在线预览 - 码云](https://simmon_page.gitee.io/vite-element-admin-ts/dist/)
-- [在线预览 - GitHub](https://mvpyb.github.io/vite-element-admin-ts/dist/)
+---
+
+- [码云](https://simmon_page.gitee.io/vite-element-admin-ts/dist/) - 完整版码云站点
+- [GitHub](https://mvpyb.github.io/vite-element-admin-ts/dist/) - 完整版github站点
 
 ---
 
@@ -46,14 +48,6 @@ Vite Element Admin TS 是一个免费开源的中后台模版(Ts 版本)。使�
 测试账号: 随便填
 测试密码: 随便填
 
-## 效果预览
-
-<p align="center">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/b51791f0/2a9ef9f2.jpg">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/5584bfb8/bb7d2925.jpg">
-   <img alt="PureAdmin Logo" width="100%" src="http://pic.yupoo.com/454539387/2d44c6f4/6d92062d.jpg">
-</p>
-
 
 ## 准备
 
@@ -66,27 +60,27 @@ Vite Element Admin TS 是一个免费开源的中后台模版(Ts 版本)。使�
 ## 目录结构
 
 ```
-    ├── mock                       // Mock相关  
-    ├── config                     // 基础配置信息  
+    ├── mock                       // Mock相关  
+    ├── config                     // 基础配置信息  
     ├── src                        // 源代码
-    │   ├── api                    // 请求相关文件
-    │   ├── assets                 // 静态资源
-    │   ├── components             // 全局公用组件
-    │   ├── config                 // 全局常量等
-    │   ├── directive              // 全局指令
-    │   ├── icons                  // svg资源
-    │   ├── layout                 // layout
-    │   ├── locale                 // 国际化
-    │   ├── plugins                // plugins
-    │   ├── router                 // 路由
-    │   ├── store                  // 全局 store 管理
-    │   ├── styles                 // 全局样式
-    │   ├── utils                  // 工具函数
-    │   ├── vendor                 // 公用vendor
-    │   ├── views                  // 页面集合
-    │   │      ├── login           // 登录
-    │   ├── App.vue                // 入口页面
-    │   ├── main.js                // 入口 加载组件 初始化等
+    │   ├── api                    // 请求相关文件
+    │   ├── assets                 // 静态资源
+    │   ├── components             // 全局公用组件
+    │   ├── config                 // 全局常量等
+    │   ├── directive              // 全局指令
+    │   ├── icons                  // svg资源
+    │   ├── layout                 // layout
+    │   ├── locale                 // 国际化
+    │   ├── plugins                // plugins
+    │   ├── router                 // 路由
+    │   ├── store                  // 全局 store 管理
+    │   ├── styles                 // 全局样式
+    │   ├── utils                  // 工具函数
+    │   ├── vendor                 // 公用vendor
+    │   ├── views                  // 页面集合
+    │   │      ├── login           // 登录
+    │   ├── App.vue                // 入口页面
+    │   ├── main.js                // 入口 加载组件 初始化等
     │   └── permission.ts          // 权限管理
     ├── .gitignore                 // git 忽略项
     ├── favicon.ico                // favicon图标
@@ -98,7 +92,7 @@ Vite Element Admin TS 是一个免费开源的中后台模版(Ts 版本)。使�
 
 ```bash
 # 克隆项目
-git clone https://github.com/mvpyb/vite-element-admin-ts.git
+git clone https://github.com/mvpyb/vite-element-admin-thin-ts.git
 
 # 进入项目目录
 cd vite-element-admin-ts
