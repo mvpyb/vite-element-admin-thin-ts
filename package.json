@@ -1,0 +1,121 @@
+{
+  "name": "vite-element-admin-thin-ts",
+  "private": true,
+  "version": "3.0.0",
+  "description": "vite-element-admin-thin-ts",
+  "scripts": {
+    "dev": "cross-env --max_old_space_size=4096 vite",
+    "build1": "vue-tsc --noEmit && vite build",
+    "build": "rimraf dist && cross-env vite build",
+    "build:staging": "rimraf dist && cross-env vite build --mode staging",
+    "report": "rimraf dist && cross-env vite build",
+    "vis": "set vis=true && vite build",
+    "lint-fix": "eslint --fix --ext .js,.ts,.jsx,.tsx,.vue src",
+    "lint-prettier": "prettier --write  \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint": "npm run lint-prettier && npm run lint-fix",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "author": {
+    "name": "灰是小灰灰的灰",
+    "email": "454539387@qq.com",
+    "url": ""
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@vueuse/core": "^9.5.0",
+    "axios": "^1.1.3",
+    "clipboard": "^2.0.11",
+    "element-plus": "^2.2.21",
+    "husky": "^8.0.2",
+    "js-cookie": "^3.0.1",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "lodash-unified": "^1.0.3",
+    "mitt": "^3.0.0",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "path": "^0.12.7",
+    "path-browserify": "^1.0.1",
+    "pinia": "^2.0.23",
+    "qs": "^6.11.0",
+    "screenfull": "^6.0.2",
+    "unplugin-vue-define-options": "^1.2.0",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6",
+    "vue-types": "^4.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/eslint-parser": "^7.19.1",
+    "@types/clipboard": "^2.0.7",
+    "@types/js-cookie": "^3.0.2",
+    "@types/lodash": "^4.14.189",
+    "@types/lodash-es": "^4.17.6",
+    "@types/mockjs": "1.0.7",
+    "@types/node": "18.11.9",
+    "@types/nprogress": "0.2.0",
+    "@types/ol": "^6.5.3",
+    "@types/qs": "^6.9.7",
+    "@types/sortablejs": "^1.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "@vitejs/plugin-legacy": "^2.3.1",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.27.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-vue": "^9.7.0",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.19",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-visualizer": "^5.8.3",
+    "sass": "^1.56.1",
+    "svg-sprite-loader": "^6.0.11",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.3",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-mock": "^2.9.6",
+    "vue-eslint-parser": "^9.1.0"
+  },
+  "homepage": "https://github.com/mvpyb/vite-element-admin-thin-ts",
+  "keywords": [
+    "vite element admin",
+    "thin",
+    "ts",
+    "vite",
+    "vue3",
+    "element-plus",
+    "admin"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "src/**/*.{vue,js,ts,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "engines": {
+    "node": ">= 16.17.0"
+  }
+}
