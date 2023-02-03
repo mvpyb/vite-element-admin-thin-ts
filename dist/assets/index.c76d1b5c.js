@@ -1,1 +1,0 @@
-import{_ as e,o as c,c as _}from"./index.f89d1bc4.js";const o={},s={class:"dashboard-editor-container"};function t(d,n){return c(),_("div",s,"dashboard")}const r=e(o,[["render",t],["__scopeId","data-v-b4dc2c2c"]]);export{r as default};
